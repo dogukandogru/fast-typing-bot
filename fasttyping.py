@@ -12,7 +12,7 @@ time.sleep(20) # 10 seconds waiting to login
 
 
 
-url = "https://10fastfingers.com/typing-test/turkish"
+url = "https://10fastfingers.com/typing-test/english"
 browser.get(url)
 time.sleep(3) # 3 seconds waiting to load page source
 
@@ -25,7 +25,10 @@ words = wordsWithHtml[0].getText().split()
 del words[len(words)-1]
 
 inputField = browser.find_element_by_xpath("//*[@id=\"inputfield\"]")
+inputField.send_keys(wordsWithHtml[0].getText())
 
+"""
 for word in words:
     inputField.send_keys(word, " ")
-    time.sleep(0.4)
+    
+"""
