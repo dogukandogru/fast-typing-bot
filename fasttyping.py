@@ -8,7 +8,7 @@ url = "https://10fastfingers.com/login"
 
 browser = webdriver.Chrome()
 browser.get(url)
-time.sleep(20) # 10 seconds waiting to login
+time.sleep(20) # 20 seconds waiting to login
 
 
 
@@ -27,8 +27,4 @@ del words[len(words)-1]
 inputField = browser.find_element_by_xpath("//*[@id=\"inputfield\"]")
 inputField.send_keys(wordsWithHtml[0].getText())
 
-"""
-for word in words:
-    inputField.send_keys(word, " ")
-    
-"""
+

@@ -1,0 +1,5 @@
+opencv_python==4.5.1.48
+selenium==3.141.0
+beautifulsoup4==4.9.3
+pyscreenshot==3.0
+pytesseract==0.3.7
